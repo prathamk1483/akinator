@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(static/images/bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .top{
+            display: block;
+            height: 150px;
+            width: 100%;
+            background-color: rgb(113, 160, 213);
+            margin: 0;
+            opacity: 90%;
+            padding: 0;
+        }
+        .middle>img{
+            opacity: 90%;
+            width: 100%;
+            padding-bottom: 0;
+        }
+        .bottom{
+            display: flex;
+            height: 18rem;
+            background-color: rgb(113, 160, 213);
+            justify-content: center;
+            align-items: center;
+        }
+        .button{
+            height: 50px;
+            width: 100px;
+            /* background-color: #fff; */
+        }
+        .upline{
+            display: block;
+            width: 100px;
+           
+        }
+        .downline{
+            display: block;
+            width: 5px;
+            background-color: rgb(128, 37, 37);
+            padding: 0px;
+        }
+        .bottom{
+            opacity: 90%;
+        }
+        button{
+            background-color: rgb(113, 160, 213);
+            height: 50px;
+            width: 6rem;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: rgb(37, 89, 148);
+            height: 50px;
+            border: 4px solid white;
+            border-radius: 20px;
+        }
+        button>a{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="middle"><img src="static/images/bglp.png" alt="" style="margin: 0;padding: 0;"></div>
+    
+    <div class="bottom">
+        <div class="button">
+           
+                <div class="upline"></div>
+                <div class="play">
+                    <button><a href="{% url 'themes' %}">PLAY </a></button>
+                </div>
+                <div class="downline"></div>
+
+        </div>
+    </div>
+</body>
+</html>
