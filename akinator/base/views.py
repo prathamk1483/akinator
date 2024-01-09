@@ -128,7 +128,8 @@ def playgame(request):
     elif len(charlist) < 1:
         context={'name':'Couldnt find your character'}
         return render(request,'result.html',context)
-    image = os.listdir("C:/Users/Pratham/Desktop/pot/WEB-D/BACKEND/akinator/akinator/static/poses")
+    dir = settings.BASE_DIR
+    image = os.listdir("dir/static/poses")
     image = random.choice(image)
     print(image)
     context ={'randomquestion':question,'image':image}
