@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(/static/images/bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .top{
+            opacity: 90%;
+            display: block;
+            height: 9rem;
+            width: 100%;
+            background-color: rgb(113, 160, 213);
+            margin: 0;
+            padding: 0;
+        }
+        .bottom{
+            opacity: 90%;
+            display: flex;
+            height: 150px;
+            background-color: rgb(113, 160, 213);
+            justify-content: center;
+            align-items: center;
+        }
+        .top>img{
+            display: block;
+            width: 20%;
+            padding-top:30px;
+        }
+        .midlle{
+            opacity: 95%;
+            display: flex;
+            background-color:rgb(140, 162, 188);  
+        }
+        .midlle>img{
+            width: 100%;
+            opacity: 100%;
+        }
+        .dialogue{
+            margin: 10% 0% 0 8%;
+            display: inline;
+            text-align: center;
+            background: #fff;
+            height: 10vh;
+            width: 20%;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .select{
+            color: rgb(68, 87, 68);
+            display: inline;
+            margin: 30px 0 0 50px;
+            font-size: 2vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        .themes{
+            display: block;
+            height: 217%;
+            margin: 26% 0% 0% 3%;
+            /* background-color: #fff; */
+}
+        
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 3vh;
+        }
+        a{
+            display: block;
+            margin-top: 5%;
+            text-decoration: none;
+            color: rgb(36, 57, 36);
+        }
+        .item{
+            display: inline-block;
+            height: 7vh;
+            background-color: #fff;
+            border:2px solid gray;
+            width:100%;
+        }
+        .item:hover{
+            height: 8vh;
+            border: 2px solid rgb(45, 70, 45);
+        }
+        .genie{
+            display: block;
+            height: 37rem;
+            width: 32rem;
+            /* background-color: red; */
+        }
+        .genie>img{
+            height: auto;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="/static/images/pngwing.com.png" alt="">
+    </div>
+    <div class="midlle">
+        <div class="genie">
+            <img src="/static/images/Daco_3267988.png" alt="">
+        </div>
+
+        <div class="dialogue">
+                <div class="select"><p style="text-align: center;">Select the next game thematic</p></div>
+                <div class="themes">
+                    <ul>
+                        <div style="border-top-left-radius: 2rem;border-top-right-radius: 2rem;" class="item"><li><a href="{% url 'chargame' %}">Character</a></li></div>
+                        <div class="item"><li><a href="{% url 'objgame' %}">Objects</a></li></div>
+                        <div style="border-bottom-left-radius: 2rem;border-bottom-right-radius: 2rem;" class="item"><li><a href="{% url 'anigame' %}">Animals</a></li></div>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="bottom"></div>   
+</body>
+</html>

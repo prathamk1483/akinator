@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akinator-Clone by Pratham Kubetkar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(/static/images/bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .top{
+            display: block;
+            height: 150px;
+            width: 100%;
+            background-color: rgb(113, 160, 213);
+            margin: 0;
+            opacity: 90%;
+            padding: 0;
+        }
+
+        .bottom{
+            display: block;
+            height: 18rem;
+            background-color: rgb(113, 160, 213);
+
+        }
+
+        .bottom{
+            opacity: 90%;
+        }
+
+        .middle{
+            display: flex;
+            background-color: white;
+            opacity: 95%;
+            width: 100%;
+            height: 37rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .showimg{
+            display: flex;
+            height: 20rem;
+            width:30rem;
+            /* background-color: red; */
+            justify-content: center;
+            align-items: center;
+        }
+        .showimg>img{
+            height: 90%;
+        }
+        h2{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="middle">
+        <div>
+            <div class="showimg">
+                <img id="imag1"src="/static/images/{{name}}.jpeg" alt="{{name}}">
+            </div>
+            <div class="dname">
+                <footer><h2>{{name}}</h2></footer>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom"></div>
+</body>
+<script>
+
+</script>
+</html>
