@@ -5,72 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        body{
+
+        body {
             background-image: url(static/images/bg.webp);
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .top{
+
+        .top {
             display: block;
             height: 150px;
             width: 100%;
             background-color: rgb(113, 160, 213);
-            margin: 0;
-            opacity: 90%;
-            padding: 0;
+            opacity: 0.9;
         }
-        .middle>img{
-            opacity: 90%;
+
+        .middle > img {
+            opacity: 0.9;
             width: 100%;
             padding-bottom: 0;
         }
-        .bottom{
+
+        .bottom {
             display: flex;
             height: 18rem;
             background-color: rgb(113, 160, 213);
             justify-content: center;
             align-items: center;
+            opacity: 0.9;
         }
-        .button{
+
+        .button {
             height: 50px;
             width: 100px;
-            /* background-color: #fff; */
         }
-        .upline{
+
+        .upline,
+        .downline {
             display: block;
-            width: 100px;
-           
+            width: 100%;
         }
-        .downline{
-            display: block;
+
+        .downline {
             width: 5px;
             background-color: rgb(128, 37, 37);
-            padding: 0px;
         }
-        .bottom{
-            opacity: 90%;
-        }
-        button{
+
+        button {
             background-color: rgb(113, 160, 213);
             height: 50px;
             width: 6rem;
             border-radius: 20px;
+            border: none;
         }
-        button:hover{
+
+        button:hover {
             background-color: rgb(37, 89, 148);
-            height: 50px;
             border: 4px solid white;
-            border-radius: 20px;
         }
-        button>a{
+
+        button > a {
             color: white;
             text-decoration: none;
         }
 
+        /* Media Query for screens smaller than 600px */
+        @media only screen and (max-width: 600px) {
+            .top,
+            .middle > img,
+            .bottom {
+                height: auto;
+            }
+
+            .top {
+                min-height: 100px;
+            }
+
+            .bottom {
+                flex-direction: column;
+            }
+
+            .button {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
